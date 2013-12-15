@@ -4,25 +4,13 @@ module.exports = function(grunt) {
 
         pkg: grunt.file.readJSON('package.json'),
 
-        // sass: {
-        //   dist: {
-        //     options: {
-        //       // cssmin will minify later
-        //       style: 'expanded'
-        //     },
-        //     files: {
-        //       'css/build/global.css': 'css/sass/global.scss'
-        //     }
-        //   }
-        // },
-
         compass: {
             dist: {
                 options: {
                     sassDir: 'css/sass',
                     cssDir: 'css',
                     require: 'susy',
-                    outputStyle: 'compressed'
+                    outputStyle: 'expanded'
                 }
             }
         },
@@ -126,7 +114,7 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
 
     // Default Task is basically a rebuild
-    grunt.registerTask('default', ['concat', 'uglify', 'compass', 'imagemin']);
+    grunt.registerTask('default', ['concat', 'uglify', 'compass', 'autoprefixer', 'cssmin', 'imagemin']);
 
     grunt.registerTask('dev', ['connect', 'watch']);
 
