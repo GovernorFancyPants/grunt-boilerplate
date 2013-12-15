@@ -5,8 +5,8 @@
 | | __| '__| | | | '_ \| __| | ___ \/ _ \| | |/ _ \ '__| '_ \| |/ _` | __/ _ \
 | |_\ \ |  | |_| | | | | |_  | |_/ / (_) | | |  __/ |  | |_) | | (_| | ||  __/
  \____/_|   \__,_|_| |_|\__| \____/ \___/|_|_|\___|_|  | .__/|_|\__,_|\__\___|
-                                                       | |
-                                                       |_|
+														 | |
+														 |_|
 
 By Governor Fancy Pants & The Vanilla Cowboy
 
@@ -18,40 +18,42 @@ $pad: 3em;
 
 
 *, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	box-sizing: border-box;
  }
 
 
 
 body {
-    font-family: 'Cabin', sans-serif;
-    font-size: 1.1em;
-    font-weight: normal;
-    color: #4d4d4d;
-    background: url(../img/temp/bg.png);
+	font-family: 'Cabin', sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	color: #4d4d4d;
+	background: url(../img/temp/bg.png);
 }
 
 img {
-  max-width: 100%;
-  height: auto !important;
+	max-width: 100%;
+	height: auto !important;
 }
 
 h3 {
-  text-transform: uppercase;
-  padding-top: 2em;
-  &.tagline {
-    padding-top: 0.3em;
-    padding-bottom: 1em;
-  }
+	text-transform: uppercase;
+	padding-top: 2em;
+	&.tagline {
+		padding-top: 0.3em;
+		padding-bottom: 1em;
+	}
 }
 
 strong {
-  color: #2b2b2b;
+	color: #2b2b2b;
 }
 
 a {
-  color: #e65540;
-  &:hover, &:focus { color: #d7341c;}
+	color: #e65540;
+	&:hover, &:focus {
+		color: #d7341c;
+	}
 }
 
 //--------------------------------------------
@@ -59,55 +61,55 @@ a {
 //--------------------------------------------
 
 .page {
-  padding: -$grid-padding;
-  @include at-breakpoint($medium-columns) {
-    padding: $grid-padding;
-  }
+	padding: -$grid-padding;
+	@include at-breakpoint($medium-columns) {
+		padding: $grid-padding;
+	}
 }
 
 .page-wrapper {
-  padding: $grid-padding;
-  @include at-breakpoint($large-columns) {
-    padding: -$grid-padding;
-  }
-  background: url(../img/temp/transp.png);
-  padding-bottom: 200px;
-  border: 2px solid #f6e7b3;
+	padding: $grid-padding;
+	@include at-breakpoint($large-columns) {
+		padding: -$grid-padding;
+	}
+	background: url(../img/temp/transp.png);
+	padding-bottom: 200px;
+	border: 2px solid #f6e7b3;
 }
 
 header {
-  padding-top: $pad;
-  text-align: center;
+	padding-top: $pad;
+	text-align: center;
 }
 
 .title-container {
-  padding-top: 1em;
+	padding-top: 1em;
 }
 
 .divider {
-  content: "";
-  height: 8px;
-  max-width: 783px;
-  margin: 0 auto;
-  border-top: 2px solid #6b6b6b;
-  border-bottom: 3px solid #6b6b6b;
+	content: "";
+	height: 8px;
+	max-width: 783px;
+	margin: 0 auto;
+	border-top: 2px solid #6b6b6b;
+	border-bottom: 3px solid #6b6b6b;
 }
 
 .content, footer {
-  max-width: 783px;
-  margin: 0 auto;
-  padding-bottom: 2em;
+	max-width: 783px;
+	margin: 0 auto;
+	padding-bottom: 2em;
 }
 
 .prereq-list {
-  list-style: none;
-  padding-left: 0;
+	list-style: none;
+	padding-left: 0;
 }
 
 .code {
-  word-wrap: break-word;
-  background-color: #f3f3f3;
-  padding: 1em;
+	word-wrap: break-word;
+	background-color: #f3f3f3;
+	padding: 1em;
 }
 
 
@@ -116,54 +118,54 @@ header {
 //--------------------------------------------
 
 .ribbon {
- font-size: 16px !important;
+	font-size: 16px !important;
 
- width: 50%;
-  @include at-breakpoint($medium-columns) {
-    width: 30%;
-  }
-   @include at-breakpoint($large-columns) {
-    width: 25%;
-  }
+	width: 50%;
+	@include at-breakpoint($medium-columns) {
+		width: 30%;
+	}
+	@include at-breakpoint($large-columns) {
+		width: 25%;
+	}
 
- position: relative;
- background: #65a8a6;
- color: #fff;
- text-align: center;
- padding: 1em 2em;
- margin: 2em auto 3em;
+	position: relative;
+	background: #65a8a6;
+	color: #fff;
+	text-align: center;
+	padding: 1em 2em;
+	margin: 2em auto 3em;
 }
 .ribbon:before, .ribbon:after {
- content: "";
- position: absolute;
- display: block;
- bottom: -1em;
- border: 1.5em solid #559694;
- z-index: -1;
+	content: "";
+	position: absolute;
+	display: block;
+	bottom: -1em;
+	border: 1.5em solid #559694;
+	z-index: -1;
 }
 .ribbon:before {
- left: -2em;
- border-right-width: 1.5em;
- border-left-color: transparent;
+	left: -2em;
+	border-right-width: 1.5em;
+	border-left-color: transparent;
 }
 .ribbon:after {
- right: -2em;
- border-left-width: 1.5em;
- border-right-color: transparent;
+	right: -2em;
+	border-left-width: 1.5em;
+	border-right-color: transparent;
 }
 .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
- content: "";
- position: absolute;
- display: block;
- border-style: solid;
- border-color: #49807f transparent transparent transparent;
- bottom: -1em;
+	content: "";
+	position: absolute;
+	display: block;
+	border-style: solid;
+	border-color: #49807f transparent transparent transparent;
+	bottom: -1em;
 }
 .ribbon .ribbon-content:before {
- left: 0;
- border-width: 1em 0 0 1em;
+	left: 0;
+	border-width: 1em 0 0 1em;
 }
 .ribbon .ribbon-content:after {
- right: 0;
- border-width: 1em 1em 0 0;
+	right: 0;
+	border-width: 1em 1em 0 0;
 }
