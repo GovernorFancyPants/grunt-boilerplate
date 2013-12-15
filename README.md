@@ -11,12 +11,10 @@ Grunt
 
 ##Use
 
-I recommend using Sublime Text and the plugin Fetch for easy access.
+I recommend using [Sublime Text](http://www.sublimetext.com/) and the [Fetch plugin](https://github.com/weslly/Nettuts-Fetch) for easy access.
 
-Install Fetch `https://github.com/weslly/Nettuts-Fetch`.
+Add this line in **Fetch:manage** `"grunt-boilerplate": "https://github.com/GovernorFancyPants/grunt-boilerplate/zipball/master"`
 
-Add this line in Fetch:manage "grunt-boilerplate": "https://github.com/GovernorFancyPants/grunt-boilerplate/zipball/master"
-
-Run Fetch:package, choose "grunt-boilerplate" and put it in your folder of choice.
+Run **Fetch:package**, choose `grunt-boilerplate` and put it in your folder of choice.
 
 Navigate to the folder in your terminal and run `npm install`
