@@ -1,0 +1,12 @@
+$total-columns  : 6;
+$column-width   : 4em;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
+
+$medium-columns : 8;
+$large-columns  : 12;
+
+.page {
+    @include container;
+    max-width: 1000px;
+}
