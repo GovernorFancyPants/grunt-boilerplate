@@ -3,7 +3,14 @@ grunt-boilerplate
 
 A boilerplate with Grunt, H5BP, Sass, Autoprefixer, Compass and Susy.
 
-Easiest use if you're running Sublime Text:
+##Prerequisites
+
+Node
+Grunt
+
+##Use
+
+I recommend using Sublime Text and the plugin Fetch for easy access.
 
 Install Fetch `https://github.com/weslly/Nettuts-Fetch`.
 
