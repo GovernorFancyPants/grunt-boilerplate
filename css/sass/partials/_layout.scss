@@ -1,0 +1,42 @@
+$total-columns  : 7;
+$column-width   : 4em;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
+
+$medium-columns : 10;
+$large-columns  : 12;
+
+.page {
+    @include container;
+    max-width: 1140px;
+}
+
+.content {
+    @include span-columns($total-columns);
+    background: hotpink;
+}
+
+.side {
+    @include span-columns($total-columns);
+    background: navy;
+}
+
+$split : $medium-columns / 2;
+
+@include at-breakpoint($medium-columns) {
+    .content {
+        @include span-columns($split);
+    }
+    .side {
+        @include span-columns($split omega);
+    }
+}
+
+@include at-breakpoint($large-columns) {
+    .content {
+        @include span-columns(8);
+    }
+    .side {
+        @include span-columns(4 omega);
+    }
+}
