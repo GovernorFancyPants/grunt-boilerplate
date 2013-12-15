@@ -10,33 +10,3 @@ $large-columns  : 12;
     @include container;
     max-width: 1000px;
 }
-
-/* .content {
-    @include span-columns($total-columns);
-
-}
-
-.side {
-    @include span-columns($total-columns);
-
-} */
-
-/* $split : $medium-columns / 2;
-
-@include at-breakpoint($medium-columns) {
-    .content {
-        @include span-columns($split);
-    }
-    .side {
-        @include span-columns($split omega);
-    }
-}
-
-@include at-breakpoint($large-columns) {
-    .content {
-        @include span-columns(8);
-    }
-    .side {
-        @include span-columns(4 omega);
-    }
-} */
